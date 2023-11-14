@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio2_3_Grupo2.MainPage"
+             Title="Grupo2 Audio"
+             BackgroundColor="Violet">
+
+    <StackLayout>
+        <Entry Placeholder="Ingrese una Descripcion" 
+           Margin="10,40,10,10" 
+           x:Name="txtDesc"/>
+        <Image
+                Source="Resources/uth.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+        <Button Text="Grabar Audio" 
+            BackgroundColor="Red"
+            x:Name="B_Grabar" 
+            Clicked="Grabar_Clicked"/>
+
+        <Button Text="Audios Guardados" 
+            BackgroundColor="Aqua"
+            x:Name="B_Ver" 
+            Clicked="Ver_Clicked"/>
+
+
+    </StackLayout>
+
+</ContentPage>
